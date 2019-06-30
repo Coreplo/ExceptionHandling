@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 namespace ExceptionHandling
 {
+
+    //An exception happens when a problem occours during a program excecution
+    //this generally will cause an abnormal termination of the program
+    //A well written program sould be able to handle exceptions
+
     class Program
     {
+
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
+            //the following 2 lines will cause an exception
+            int[] arr = new int[] { 1, 2, 3, 4 };
+            Console.WriteLine(arr[8]);
+
             Console.WriteLine("Hello World!");
             Console.ReadKey();
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
         }
     }
 }
